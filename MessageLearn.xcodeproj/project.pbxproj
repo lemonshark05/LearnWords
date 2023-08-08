@@ -11,6 +11,13 @@
 		D9F2D3272A82E197005BE1E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3262A82E197005BE1E4 /* ContentView.swift */; };
 		D9F2D3292A82E198005BE1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D3282A82E198005BE1E4 /* Assets.xcassets */; };
 		D9F2D32C2A82E198005BE1E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D32B2A82E198005BE1E4 /* Preview Assets.xcassets */; };
+		D9F2D3332A82E2EF005BE1E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3322A82E2EF005BE1E4 /* LoginView.swift */; };
+		D9F2D3382A82E8FF005BE1E4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3372A82E8FF005BE1E4 /* RegisterView.swift */; };
+		D9F2D33B2A82EBEC005BE1E4 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D33A2A82EBEC005BE1E4 /* InboxView.swift */; };
+		D9F2D33E2A82ED10005BE1E4 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D33D2A82ED10005BE1E4 /* ActiveNowView.swift */; };
+		D9F2D3402A82EFF7005BE1E4 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D33F2A82EFF7005BE1E4 /* InboxRowView.swift */; };
+		D9F2D3432A82F58C005BE1E4 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3422A82F58C005BE1E4 /* NewMessageView.swift */; };
+		D9F2D3462A82F85C005BE1E4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3452A82F85C005BE1E4 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		D9F2D3262A82E197005BE1E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9F2D3282A82E198005BE1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9F2D32B2A82E198005BE1E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9F2D3322A82E2EF005BE1E4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D9F2D3372A82E8FF005BE1E4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D9F2D33A2A82EBEC005BE1E4 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		D9F2D33D2A82ED10005BE1E4 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		D9F2D33F2A82EFF7005BE1E4 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		D9F2D3422A82F58C005BE1E4 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		D9F2D3452A82F85C005BE1E4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 		D9F2D3232A82E197005BE1E4 /* MessageLearn */ = {
 			isa = PBXGroup;
 			children = (
+				D9F2D3342A82E308005BE1E4 /* Core */,
 				D9F2D3242A82E197005BE1E4 /* MessageLearnApp.swift */,
 				D9F2D3262A82E197005BE1E4 /* ContentView.swift */,
 				D9F2D3282A82E198005BE1E4 /* Assets.xcassets */,
@@ -65,6 +80,68 @@
 				D9F2D32B2A82E198005BE1E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9F2D3342A82E308005BE1E4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D3442A82F84B005BE1E4 /* Profile */,
+				D9F2D3412A82F573005BE1E4 /* NewMessage */,
+				D9F2D33C2A82ECEF005BE1E4 /* ActiveNow */,
+				D9F2D3392A82EBD5005BE1E4 /* Inbox */,
+				D9F2D3352A82E319005BE1E4 /* Authority */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D9F2D3352A82E319005BE1E4 /* Authority */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D3362A82E893005BE1E4 /* View */,
+			);
+			path = Authority;
+			sourceTree = "<group>";
+		};
+		D9F2D3362A82E893005BE1E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D3322A82E2EF005BE1E4 /* LoginView.swift */,
+				D9F2D3372A82E8FF005BE1E4 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9F2D3392A82EBD5005BE1E4 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D33A2A82EBEC005BE1E4 /* InboxView.swift */,
+				D9F2D33F2A82EFF7005BE1E4 /* InboxRowView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		D9F2D33C2A82ECEF005BE1E4 /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D33D2A82ED10005BE1E4 /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		D9F2D3412A82F573005BE1E4 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D3422A82F58C005BE1E4 /* NewMessageView.swift */,
+			);
+			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		D9F2D3442A82F84B005BE1E4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D3452A82F85C005BE1E4 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F2D3402A82EFF7005BE1E4 /* InboxRowView.swift in Sources */,
+				D9F2D3462A82F85C005BE1E4 /* ProfileView.swift in Sources */,
+				D9F2D3432A82F58C005BE1E4 /* NewMessageView.swift in Sources */,
+				D9F2D3332A82E2EF005BE1E4 /* LoginView.swift in Sources */,
+				D9F2D3382A82E8FF005BE1E4 /* RegisterView.swift in Sources */,
+				D9F2D33B2A82EBEC005BE1E4 /* InboxView.swift in Sources */,
+				D9F2D33E2A82ED10005BE1E4 /* ActiveNowView.swift in Sources */,
 				D9F2D3272A82E197005BE1E4 /* ContentView.swift in Sources */,
 				D9F2D3252A82E197005BE1E4 /* MessageLearnApp.swift in Sources */,
 			);
