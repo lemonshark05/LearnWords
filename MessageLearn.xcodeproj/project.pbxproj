@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D9B0C4822A83549200F71099 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C4812A83549200F71099 /* RegisterViewModel.swift */; };
-		D9B0C4882A835E6100F71099 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9B0C4872A835E6100F71099 /* GoogleService-Info.plist */; };
 		D9B0C48B2A83E21C00F71099 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C48A2A83E21C00F71099 /* ContentViewModel.swift */; };
 		D9F2D3252A82E197005BE1E4 /* MessageLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3242A82E197005BE1E4 /* MessageLearnApp.swift */; };
 		D9F2D3272A82E197005BE1E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3262A82E197005BE1E4 /* ContentView.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		D9B0C4812A83549200F71099 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
-		D9B0C4872A835E6100F71099 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9B0C48A2A83E21C00F71099 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		D9F2D3212A82E197005BE1E4 /* MessageLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F2D3242A82E197005BE1E4 /* MessageLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLearnApp.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				D9F2D34B2A831F98005BE1E4 /* Model */,
 				D9F2D34F2A83272A005BE1E4 /* Service */,
 				D9F2D3282A82E198005BE1E4 /* Assets.xcassets */,
-				D9B0C4872A835E6100F71099 /* GoogleService-Info.plist */,
 				D9F2D32A2A82E198005BE1E4 /* Preview Content */,
 			);
 			path = MessageLearn;
@@ -321,7 +318,6 @@
 			files = (
 				D9F2D32C2A82E198005BE1E4 /* Preview Assets.xcassets in Resources */,
 				D9F2D3292A82E198005BE1E4 /* Assets.xcassets in Resources */,
-				D9B0C4882A835E6100F71099 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
