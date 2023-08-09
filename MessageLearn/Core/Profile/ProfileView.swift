@@ -6,30 +6,41 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ProfileView: View {
+    @StateObject var viewModel = ProfileViewModel()
+    let user: User
     var body: some View {
         VStack {
             // header
             VStack {
-                Image(systemName: "person.circle.fill")
-                    .resizable()
-                    .frame (width: 80, height: 80)
-                    .foregroundColor(Color (.systemGray4) )
-                Text ("Bruce Wayne")
+                PhotosPicker(selection: $viewModel.selectedItem) {
+                    if let profileImage = viewModel.profileImage {
+                        profileImage
+                            .resizable()
+                            .scaledToFill()
+                            .frame (width: 80, height: 80)
+                            .clipShape (Circle())
+                    } else {
+                        CircularProfileImageView(user: user, size: .xLarge)
+                    }
+                }
+                Text (user.fullname)
                     .font (.title2)
                     .fontWeight(.semibold)
+                    
             }
             // list
             List {
                 Section {
-                    ForEach (0 ... 5, id: \.self) { option in
+                    ForEach (SettingsOptionsViewModel.allCases, id: \.self) { option in
                         HStack {
-                            Image(systemName: "bell.circle.fill")
+                            Image(systemName: option.imageName)
                                 .resizable()
                                 .frame(width: 24, height: 24)
-                                .foregroundColor(Color (.systemPurple))
-                            Text ("Notifications")
+                                .foregroundColor(option.imageBackgroundColor)
+                            Text (option.title)
                                 .font(.subheadline)
                         }
                     }
@@ -51,6 +62,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(user: User.MOCK_USER)
     }
 }

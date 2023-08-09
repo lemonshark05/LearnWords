@@ -17,6 +17,7 @@ struct NewMessageView: View {
                     .frame (height: 44)
                     .padding (.leading)
                     .background (Color (.systemGroupedBackground))
+                
                 Text ("CONTACTS")
                     .foregroundColor(.gray)
                     .font (.footnote)
@@ -26,10 +27,7 @@ struct NewMessageView: View {
                 ForEach(0 ... 10, id: \.self) { user in
                     VStack {
                         HStack {
-                            Image (systemName: "person.circle.fill")
-                                .resizable()
-                                .frame(width: 32, height: 32)
-                                .foregroundColor (Color(.systemGray4))
+                            CircularProfileImageView(user: User.MOCK_USER, size: .small)
                             Text("Chadwick Bozeman" )
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
