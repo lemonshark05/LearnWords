@@ -16,7 +16,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   }
 }
 
-
 @main
 struct MessageApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
