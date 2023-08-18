@@ -55,3 +55,4 @@ This version of the interactive prototype emphasizes intuitive design, creating 
 
 
 ## Digital Wireframes & Mockups
+<img width="753" alt="Screenshot 2023-08-09 at 08 16 49" src="https://github.com/lemonshark05/LearnWords/assets/100770743/618640e5-5a8a-49ae-b0b0-e156196bd81b">
