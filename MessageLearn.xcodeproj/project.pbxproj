@@ -11,6 +11,10 @@
 		D9B0C48B2A83E21C00F71099 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C48A2A83E21C00F71099 /* ContentViewModel.swift */; };
 		D9B0C48D2A83E67500F71099 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9B0C48C2A83E67400F71099 /* GoogleService-Info.plist */; };
 		D9B0C4902A83E6BC00F71099 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C48F2A83E6BC00F71099 /* User.swift */; };
+		D9B0C4922A83FA8B00F71099 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C4912A83FA8B00F71099 /* UserService.swift */; };
+		D9B0C4962A84042B00F71099 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C4952A84042B00F71099 /* InboxViewModel.swift */; };
+		D9B0C4982A84519C00F71099 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C4972A84519C00F71099 /* NewMessageViewModel.swift */; };
+		D9B0C49A2A8467B300F71099 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0C4992A8467B300F71099 /* Message.swift */; };
 		D9F2D3252A82E197005BE1E4 /* MessageLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3242A82E197005BE1E4 /* MessageLearnApp.swift */; };
 		D9F2D3272A82E197005BE1E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3262A82E197005BE1E4 /* ContentView.swift */; };
 		D9F2D3292A82E198005BE1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D3282A82E198005BE1E4 /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 		D9B0C48A2A83E21C00F71099 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		D9B0C48C2A83E67400F71099 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9B0C48F2A83E6BC00F71099 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D9B0C4912A83FA8B00F71099 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D9B0C4952A84042B00F71099 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+		D9B0C4972A84519C00F71099 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
+		D9B0C4992A8467B300F71099 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D9F2D3212A82E197005BE1E4 /* MessageLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F2D3242A82E197005BE1E4 /* MessageLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLearnApp.swift; sourceTree = "<group>"; };
 		D9F2D3262A82E197005BE1E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,8 +99,26 @@
 			isa = PBXGroup;
 			children = (
 				D9B0C48F2A83E6BC00F71099 /* User.swift */,
+				D9B0C4992A8467B300F71099 /* Message.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D9B0C4932A8403E400F71099 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D33A2A82EBEC005BE1E4 /* InboxView.swift */,
+				D9F2D33F2A82EFF7005BE1E4 /* InboxRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9B0C4942A8403E900F71099 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9B0C4952A84042B00F71099 /* InboxViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D9F2D3182A82E197005BE1E4 = {
@@ -170,8 +196,8 @@
 		D9F2D3392A82EBD5005BE1E4 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
-				D9F2D33A2A82EBEC005BE1E4 /* InboxView.swift */,
-				D9F2D33F2A82EFF7005BE1E4 /* InboxRowView.swift */,
+				D9B0C4942A8403E900F71099 /* ViewModel */,
+				D9B0C4932A8403E400F71099 /* View */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -188,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				D9F2D3422A82F58C005BE1E4 /* NewMessageView.swift */,
+				D9B0C4972A84519C00F71099 /* NewMessageViewModel.swift */,
 			);
 			path = NewMessage;
 			sourceTree = "<group>";
@@ -213,6 +240,7 @@
 		D9F2D34F2A83272A005BE1E4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				D9B0C4912A83FA8B00F71099 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -333,9 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F2D3402A82EFF7005BE1E4 /* InboxRowView.swift in Sources */,
+				D9B0C4962A84042B00F71099 /* InboxViewModel.swift in Sources */,
 				D9F2D3462A82F85C005BE1E4 /* ProfileView.swift in Sources */,
 				D9F2D3432A82F58C005BE1E4 /* NewMessageView.swift in Sources */,
 				D9F2D36A2A835091005BE1E4 /* LoginViewModel.swift in Sources */,
+				D9B0C4922A83FA8B00F71099 /* UserService.swift in Sources */,
 				D9B0C48B2A83E21C00F71099 /* ContentViewModel.swift in Sources */,
 				D9F2D3332A82E2EF005BE1E4 /* LoginView.swift in Sources */,
 				D9F2D3542A832C28005BE1E4 /* ChatView.swift in Sources */,
@@ -345,11 +375,13 @@
 				D9B0C4822A83549200F71099 /* RegisterViewModel.swift in Sources */,
 				D9F2D3582A8336FD005BE1E4 /* ChatBubble.swift in Sources */,
 				D9F2D3512A832768005BE1E4 /* CircularProfileImageView.swift in Sources */,
+				D9B0C4982A84519C00F71099 /* NewMessageViewModel.swift in Sources */,
 				D9F2D33B2A82EBEC005BE1E4 /* InboxView.swift in Sources */,
 				D9F2D33E2A82ED10005BE1E4 /* ActiveNowView.swift in Sources */,
 				D9F2D34A2A82FE0B005BE1E4 /* ProfileViewModel.swift in Sources */,
 				D9F2D3272A82E197005BE1E4 /* ContentView.swift in Sources */,
 				D9F2D3662A834F1F005BE1E4 /* AuthService.swift in Sources */,
+				D9B0C49A2A8467B300F71099 /* Message.swift in Sources */,
 				D9F2D3482A82FA70005BE1E4 /* SettingsOptionsViewModel.swift in Sources */,
 				D9F2D3252A82E197005BE1E4 /* MessageLearnApp.swift in Sources */,
 			);
@@ -488,6 +520,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,6 +550,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
