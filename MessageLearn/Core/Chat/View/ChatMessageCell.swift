@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ChatMessageCell: View {
-    let isFromCurrentUser: Bool
+    let message: Message
+    
+    private var isFromCurrentUser: Bool {
+        return message.isFromCurrentUser
+    }
     
     var body: some View {
         HStack {
@@ -36,12 +40,12 @@ struct ChatMessageCell: View {
                 }
             }
         }
-        .padding(.horizontal)
+        .padding(.horizontal, 8)
     }
 }
 
-struct ChatMessageCell_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatMessageCell(isFromCurrentUser: false)
-    }
-}
+//struct ChatMessageCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ChatMessageCell(isFromCurrentUser: false)
+//    }
+//}

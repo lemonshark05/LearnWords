@@ -38,6 +38,8 @@
 		D9F2D3632A834D29005BE1E4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D9F2D3622A834D29005BE1E4 /* FirebaseStorage */; };
 		D9F2D3662A834F1F005BE1E4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3652A834F1F005BE1E4 /* AuthService.swift */; };
 		D9F2D36A2A835091005BE1E4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D3692A835091005BE1E4 /* LoginViewModel.swift */; };
+		D9FFD6C72A95C4AF00C325AD /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FFD6C62A95C4AF00C325AD /* MessageService.swift */; };
+		D9FFD6CB2A96546B00C325AD /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FFD6CA2A96546B00C325AD /* ChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		D9F2D3572A8336FC005BE1E4 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		D9F2D3652A834F1F005BE1E4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D9F2D3692A835091005BE1E4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D9FFD6C62A95C4AF00C325AD /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		D9FFD6CA2A96546B00C325AD /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B0C4912A83FA8B00F71099 /* UserService.swift */,
+				D9FFD6C62A95C4AF00C325AD /* MessageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -248,9 +253,8 @@
 		D9F2D3522A832C1A005BE1E4 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				D9F2D3532A832C28005BE1E4 /* ChatView.swift */,
-				D9F2D3552A83336B005BE1E4 /* ChatMessageCell.swift */,
-				D9F2D3572A8336FC005BE1E4 /* ChatBubble.swift */,
+				D9FFD6C82A95C62500C325AD /* View */,
+				D9FFD6C92A95C62C00C325AD /* ViewModels */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -278,6 +282,24 @@
 				D9F2D3652A834F1F005BE1E4 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		D9FFD6C82A95C62500C325AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D3532A832C28005BE1E4 /* ChatView.swift */,
+				D9F2D3552A83336B005BE1E4 /* ChatMessageCell.swift */,
+				D9F2D3572A8336FC005BE1E4 /* ChatBubble.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9FFD6C92A95C62C00C325AD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D9FFD6CA2A96546B00C325AD /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +388,7 @@
 				D9F2D3432A82F58C005BE1E4 /* NewMessageView.swift in Sources */,
 				D9F2D36A2A835091005BE1E4 /* LoginViewModel.swift in Sources */,
 				D9B0C4922A83FA8B00F71099 /* UserService.swift in Sources */,
+				D9FFD6CB2A96546B00C325AD /* ChatViewModel.swift in Sources */,
 				D9B0C48B2A83E21C00F71099 /* ContentViewModel.swift in Sources */,
 				D9F2D3332A82E2EF005BE1E4 /* LoginView.swift in Sources */,
 				D9F2D3542A832C28005BE1E4 /* ChatView.swift in Sources */,
@@ -380,6 +403,7 @@
 				D9F2D33E2A82ED10005BE1E4 /* ActiveNowView.swift in Sources */,
 				D9F2D34A2A82FE0B005BE1E4 /* ProfileViewModel.swift in Sources */,
 				D9F2D3272A82E197005BE1E4 /* ContentView.swift in Sources */,
+				D9FFD6C72A95C4AF00C325AD /* MessageService.swift in Sources */,
 				D9F2D3662A834F1F005BE1E4 /* AuthService.swift in Sources */,
 				D9B0C49A2A8467B300F71099 /* Message.swift in Sources */,
 				D9F2D3482A82FA70005BE1E4 /* SettingsOptionsViewModel.swift in Sources */,
